@@ -41,12 +41,10 @@ Time-related measurements - ex. average message procesing/wait time. This is whe
 
 = Further ideas =
 
-1) JMX control - start/stop via JMX, change settings via JMX
-
-2) publish monitoring data via JMX - not sure whether it is good or bad...
-
-3) filter (inclusion/exclusion) for actors
-
-4) support for several ActorSystems at once
+- test on real projects
+- add JMX control - start/stop via JMX, change settings via JMX
+- publish monitoring data via JMX - not sure whether it is good or bad...
+- filter (inclusion/exclusion) for actors
+- support for several ActorSystems at once
 
 5) play with AspectJ to implement something similar to Typesafe Console but without GUI
