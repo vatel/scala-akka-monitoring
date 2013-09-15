@@ -14,10 +14,10 @@ Even better if you have a simple open-source tool which you can adapt to your ne
 
 = How it works =
 
-If you are familiar with profilers there are 2 concepts: sampling and instrumentation. Typesafe Console does instrumentation - it "patches" some akka classes via AspectJ to intercept some calls and gather info for further analysis.
+If you are familiar with profilers there are 2 concepts: sampling and instrumentation. Typesafe Console does instrumentation - it "patches" some akka classes with AspectJ to intercept some calls and gather info for further analysis.
 My tool utilizes sampling - it periodically traverses the whole actor tree and all dispatchers having a reference to ActorSystem. This reference is all that it needs to work.
 
-Access to actor tree is rather simple, excepting that the tool must be inside "akka.actor.package" (otherwise you can not compile it). Going through dispatchers was only possible Java reflection because of private fields.
+Access to actor tree is rather simple, excepting that the tool must be inside "akka.actor.package" (otherwise you can not compile it). Going through dispatchers was only possible with Java reflection because of private fields.
 
 I belive such monitoring is better to be added to Akka itself, without hacks and reflection - one day maybe ;)
 
@@ -27,7 +27,14 @@ I belive such monitoring is better to be added to Akka itself, without hacks and
 Look into Test.scala
 
 
-= What you can not with this tool =
+= What you can with this tool =
+
+- See the whole actor tree (can be turned on/off soon)
+- See "top actors" (with maximum nr of messages in mailbox), some params are tunable
+- See all MessageDispatchers (currently only default Dispatcher is supported) with their ExecutorServices (currently details are only shown for ForkJoinPool which is default)
+
+
+= What you can not =
 
 Time-related measurements - ex. average message procesing/wait time. This is where Typesafe Console shines!
 
