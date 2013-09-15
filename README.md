@@ -4,7 +4,7 @@ scala-akka-monitoring
 Experiments with monitoring of Akka actors
 
 
-= Motivation =
+* Motivation *
 
 Akka, the great actors framework, does not have monitoring out-of-the box.
 I have played with TypeSafe Console for some time - really, an admirable stuff, beautiful and handfull for deep data analysis. But it is not applicable for projects of small or medium size we are working now - it is very expensive and, most important, we do not want the monitoring be so deep!
