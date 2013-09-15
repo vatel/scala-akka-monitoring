@@ -26,11 +26,9 @@ I belive such monitoring is better to be added to Akka itself, without hacks and
 
 Examples of usage
 =================
-{{{
 val system: ActorSystem = ...
 
 AkkaSampling.print(system)
-}}}
 
 Look into Test.scala
 
