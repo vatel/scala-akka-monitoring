@@ -48,5 +48,4 @@ Further ideas
 - publish monitoring data via JMX - not sure whether it is good or bad...
 - filter (inclusion/exclusion) for actors
 - support for several ActorSystems at once
-
-5) play with AspectJ to implement something similar to Typesafe Console but without GUI
+- play with AspectJ to implement something similar to Typesafe Console but without GUI
