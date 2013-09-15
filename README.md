@@ -55,3 +55,7 @@ Further ideas
 - filter (inclusion/exclusion) for actors
 - support for several ActorSystems at once
 - play with AspectJ to implement something similar to Typesafe Console but without GUI
+
+Feedback
+========
+Currently on akka-user mail list: https://groups.google.com/forum/#!topic/akka-user/4FGSUUMyM4U
