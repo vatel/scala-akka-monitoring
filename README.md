@@ -28,6 +28,7 @@ Examples of usage
 =================
 val system: ActorSystem = ...
 
+// this will print info about actors and dispatcher to stdout every 5 seconds
 AkkaSampling.print(system)
 
 Look into Test.scala
